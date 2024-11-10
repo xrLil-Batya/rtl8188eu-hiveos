@@ -205,7 +205,7 @@ Download source:
 
 ```
 git clone https://github.com/xrLil-Batya/rtl8188eu-hiveos.git
-cd rtl8188eu
+cd rtl8188eu-hiveos
 ```
 
 Install missing packages:
