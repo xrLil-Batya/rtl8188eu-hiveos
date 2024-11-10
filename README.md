@@ -8,6 +8,7 @@
 - Based on EDIMAX EW-7811Un V2 Linux Driver (Version : 1.0.1.3) 2021-10-01
 - Support Kernel: 3.8 - 5.4 (Realtek)
 - Support up to Kernel 6.3
+- Fixed build on HiveOS
 
 ## Specification
 
@@ -203,7 +204,7 @@ TX power control tested with SoftAP mode and OpenWrt firmware (OpenWrt 21.02.0 r
 Download source:
 
 ```
-git clone https://github.com/ivanovborislav/rtl8188eu.git
+git clone https://github.com/xrLil-Batya/rtl8188eu-hiveos.git
 cd rtl8188eu
 ```
 
