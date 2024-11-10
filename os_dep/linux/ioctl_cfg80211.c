@@ -5406,8 +5406,12 @@ static int cfg80211_rtw_change_beacon(struct wiphy *wiphy, struct net_device *nd
 
 	RTW_INFO(FUNC_NDEV_FMT"\n", FUNC_NDEV_ARG(ndev));
 
+#if (LINUX_VERSION_CODE >= KERNEL_VERSION(6, 4, 0))
 	struct cfg80211_beacon_data* beacon = &info->beacon;
 	ret = rtw_add_beacon(adapter, beacon->head, beacon->head_len, beacon->tail, beacon->tail_len);
+#else
+	ret = rtw_add_beacon(adapter, info->head, info->head_len, info->tail, info->tail_len);
+#endif
 
 	return ret;
 }
